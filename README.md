@@ -1,6 +1,6 @@
-# Portfolio Blog Starter
+# Personal Portfolio Website
 
-This is a porfolio site template includes:
+This is a porfolio site includes:
 
 - MDX and Markdown support
 - Optimized for SEO (sitemap, robots, JSON-LD schema)
@@ -10,3 +10,5 @@ This is a porfolio site template includes:
 - Tailwind v4
 - Vercel Speed Insights / Web Analytics
 - Geist font
+- JavaScript
+- TypeScript

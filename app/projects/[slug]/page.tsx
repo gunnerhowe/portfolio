@@ -21,6 +21,8 @@ export function generateMetadata({ params }) {
     title,
     publishedAt: publishedTime,
     summary: description,
+    link,
+    languages,
     image,
   } = post.metadata
   let ogImage = image
@@ -82,12 +84,19 @@ export default function Projects({ params }) {
           }),
         }}
       />
-      <h1 className="title font-semibold text-2xl tracking-tighter">
-        {post.metadata.title}
-      </h1>
+      <div className="flex justify-between items-center space-x-4">
+        <h1 className="title font-semibold text-2xl tracking-tighter">
+          {post.metadata.title}
+        </h1>
+        <a href={post.metadata.link} target="_blank" rel="noopener noreferrer">
+          <button className="bg-white text-black font-semibold py-2 px-4 rounded-md border border-black hover:bg-gray-100 cursor-pointer">
+            GitHub
+          </button>
+        </a>
+      </div>
       <div className="flex justify-between items-center mt-2 mb-8 text-sm">
         <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          {formatDate(post.metadata.publishedAt)}
+          {post.metadata.languages}
         </p>
       </div>
       <article className="prose">
