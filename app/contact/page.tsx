@@ -22,10 +22,6 @@ export default function Page() {
         <p className="font-normal text-1xl mb-1 tracking-tighter">8009 Costa Norte</p>
         <p className="font-normal text-1xl mb-8 tracking-tighter">Shannon Hills, AR 72103</p>
       </div>
-      <div>
-        <p className="font-semibold text-2xl mb-2 tracking-tighter">LinkedIn</p>
-        <p className="font-seminormalold text-1xl mb-8 tracking-tighter">www.linkedin.com/in/gunner-howe-337617119</p>
-      </div>
     </section>
   )
 }
